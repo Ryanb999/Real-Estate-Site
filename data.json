@@ -58,8 +58,8 @@
                 }
             ],
             "images": [
-                "url",
-                "url"
+                "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQqt34ZBHZTiLyML6NX9daeK1mYFZxLCaPFqa3X7L3h4e52JlrYPJml5YZOf1HXE9fU-W7szp7DElM4f8vHi44FhlE8lZFd_i7IForeYxqq&usqp=CAc",
+                "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQqt34ZBHZTiLyML6NX9daeK1mYFZxLCaPFqa3X7L3h4e52JlrYPJml5YZOf1HXE9fU-W7szp7DElM4f8vHi44FhlE8lZFd_i7IForeYxqq&usqp=CAc"
             ],
             "features": {
                 "heating": true,
@@ -74,3 +74,4 @@
         }
     ]
 }
+
