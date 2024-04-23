@@ -1,0 +1,76 @@
+{
+    "housing": [
+        {
+            "address": "7757 Church Street\nPrinceton, NJ 08540",
+            "bedrooms": "4",
+            "bathrooms": "2",
+            "sqr_footage": "3000",
+            "size_lot": "5000",
+            "price_listed": "325000",
+            "history_price": [
+                {
+                    "date_sold": "4/22/2024",
+                    "price_sold": "200000",
+                    "owner": "John Doe"
+                }
+            ],
+            "agents": [
+                {
+                    "name": "Jane Smith",
+                    "contact": "555-123-4567",
+                    "email": "jane.smith@example.com"
+                }
+            ],
+            "images": [
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ckckcciFZOuG0Xk_YvX0h72cScLIYkx58gpKTcYQsw&s",
+                "https://www.google.com/url?sa=i&url=https%3A%2F%2Falannacavanagh.com%2Fblog%2F2017%2F5%2F15%2Fmeeting-at-penguin-random-house&psig=AOvVaw38kl-d8SZB71go2IhvukUu&ust=1713927207088000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIizuMSq14UDFQAAAAAdAAAAABAE"
+            ],
+            "features": {
+                "heating": true,
+                "cooling": true,
+                "appliances": true,
+                "basement": true,
+                "parking": true,
+                "room_dining": true,
+                "room_family": true
+            },
+            "description": "This spacious 4-bedroom, 2-bathroom home located in Princeton, NJ offers 3000 square feet of living space on a 5000 square foot lot. Featuring hardwood floors, a fully equipped kitchen, and a finished basement. Enjoy the convenience of heating, cooling, and parking available. Perfect for entertaining with separate dining and family rooms. Contact agent Jane Smith for more information."
+        },
+        {
+            "address": "123 Main Street\nAnytown, USA 12345",
+            "bedrooms": "3",
+            "bathrooms": "2.5",
+            "sqr_footage": "2500",
+            "size_lot": "4000",
+            "price_listed": "275000",
+            "history_price": [
+                {
+                    "date_sold": "4/20/2024",
+                    "price_sold": "250000",
+                    "owner": "Jane Doe"
+                }
+            ],
+            "agents": [
+                {
+                    "name": "John Smith",
+                    "contact": "555-987-6543",
+                    "email": "john.smith@example.com"
+                }
+            ],
+            "images": [
+                "url",
+                "url"
+            ],
+            "features": {
+                "heating": true,
+                "cooling": true,
+                "appliances": true,
+                "basement": false,
+                "parking": true,
+                "room_dining": true,
+                "room_family": false
+            },
+            "description": "Beautiful 3-bedroom, 2.5-bathroom home located in the heart of Anytown, USA. This charming property features 2500 square feet of living space on a 4000 square foot lot. Spacious bedrooms, updated kitchen appliances, and a cozy dining area make this house perfect for families. Contact agent John Smith for further details."
+        }
+    ]
+}
