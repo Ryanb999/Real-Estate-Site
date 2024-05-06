@@ -1,14 +1,10 @@
-// your_script.js
+let housingData;
 
-// Fetch JSON data
-// Fetch JSON data from the hosted URL
 fetch('https://raw.githubusercontent.com/Ryanb999/Real-Estate-Site/main/data.json')
     .then(response => response.json())
     .then(data => {
-        // Once data is fetched, proceed to generate and display listings
-        const housingData = data;
+        housingData = data;
 
-        // Function to generate listing HTML
         function generateListing(listing) {
             return `
                 <div class="listing">
@@ -25,7 +21,6 @@ fetch('https://raw.githubusercontent.com/Ryanb999/Real-Estate-Site/main/data.jso
             `;
         }
 
-        // Function to display listings on the webpage
         function displayListings() {
             const listingsContainer = document.getElementById('listings');
             let listingsHTML = '';
@@ -37,7 +32,6 @@ fetch('https://raw.githubusercontent.com/Ryanb999/Real-Estate-Site/main/data.jso
             listingsContainer.innerHTML = listingsHTML;
         }
 
-        // Call the displayListings function to render listings
         displayListings();
     })
     .catch(error => {
@@ -45,7 +39,6 @@ fetch('https://raw.githubusercontent.com/Ryanb999/Real-Estate-Site/main/data.jso
     });
 
 
-// Function to generate listing HTML
 function generateListing(listing) {
     return `
         <div class="listing">
@@ -59,4 +52,19 @@ function generateListing(listing) {
             <!-- Add more details and styling as needed -->
         </div>
     `;
+}
+
+function searchProperties() {
+    var searchQuery = document.getElementById('searchInput').value;
+    document.getElementById('searchResults').innerHTML = "<h2>Search Results for '" + searchQuery + "'</h2>";
+    
+    const listingsContainer = document.getElementById('listings');
+    let listingsHTML = '';
+    housingData.housing.forEach(listing => {
+        if (listing.address.includes(searchQuery)) {
+            listingsHTML += generateListing(listing);
+        }
+    });
+
+    generateListing(housingData);
 }

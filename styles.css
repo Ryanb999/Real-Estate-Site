@@ -5,6 +5,11 @@
     margin-bottom: 20px;
 }
 
+footer {
+  bottom: 0;
+  position: absolute
+}
+
 body {
     font-family: sans-serif;
     color: white;
@@ -79,11 +84,13 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center center;
-    filter: blur(10px);
+    filter: blur(5px);
     z-index: -2;
     max-height: calc(100vh);
     overflow-y: auto;
     position: fixed;
+
+    background-image: url("https://images.unsplash.com/photo-1576764225594-96ad970efffa?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   }
   
   .overlay {
@@ -105,7 +112,7 @@ body {
   
   .listing {
     width: 22rem;
-    margin-top: 1rem;
+    margin: 1rem;
     padding: 6px;
     background-color: rgba(127, 127, 127, 0.33);
     border-radius: 1rem;
@@ -225,6 +232,36 @@ body {
     background-color: rgba(50, 50, 50, 0.5);
     border-radius: 2rem;
   }
+
+  .search-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#searchResults {
+    margin-top: 20px;
+}
   
   @media only screen and (max-width: 768px) {
     body {

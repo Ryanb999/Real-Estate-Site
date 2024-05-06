@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="listings"></div>
+    <div id="BackgroundContainer">
+        <div id="Background"></div>
+        <div class="overlay"></div>
+    </div>
+
+    <header>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter location, neighborhood, or ZIP code">
+            <button onclick="searchProperties()">Search</button>
+        </div>
+        <div id="searchResults">
+            <!-- Search results will be displayed here -->
+        </div>
+    </header>
+
+    <section>
+        <div id="listings"></div>
+    </section>
+
+    <footer>
+        Footer
+    </footer>
     
     <script src="script.js"></script>
 </body>
